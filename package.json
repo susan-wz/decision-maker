@@ -1,0 +1,23 @@
+{
+  "name": "decision-maker",
+  "version": "1.0.0",
+  "description": "A web app that helps groups of friends to vote on a preferred choice (using ranked voting), for example: \"What movie should we see next Friday?\".",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susan-wz/decision-maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susan-wz/decision-maker/issues"
+  },
+  "homepage": "https://github.com/susan-wz/decision-maker#readme"
+}
