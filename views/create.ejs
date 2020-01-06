@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Susan's Decision-Maker</title>
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="../public/styles/layout.css" type="text/css" />
+
+  <!-- Nav CSS -->
+  <link rel="stylesheet" href="../public/styles/nav.css" type="text/css" />
+
+  <!-- External Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <%- include('partials/_nav') %>
+  </nav>
+  <header>
+    <h1>Create a Poll</h1>
+  </header>
+  <main>
+    <form method="POST" action="/register">
+      <p>Poll Question</p>
+      <input type="text" name="question" id="question" />
+      <button type="submit">Create Poll</button>
+    </form>
+  </main>
+</body>
+
+</html>
