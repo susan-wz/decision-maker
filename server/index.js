@@ -8,19 +8,14 @@ app.use('/public', express.static('public'));
 
 // Routes
 
-// Landing page
+// Landing page and poll creation
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-// Poll creation page
-app.get("/create", (req, res) => {
-  res.render("create");
-});
-
 // Post request to create poll
-app.post("/create", (req, res) => {
-  res.render("create");
+app.post("/", (req, res) => {
+  res.render("index");
 });
 
 // Choice submission page

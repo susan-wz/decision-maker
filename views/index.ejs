@@ -15,6 +15,15 @@
   <!-- External Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="../public/scripts/client.js"></script>
+
+  <!-- External Icons -->
+  <script src="https://kit.fontawesome.com/b9329590b9.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -23,11 +32,21 @@
   </nav>
   <header>
     <h1>Decision-Maker</h1>
-    <h2>Some extra text about what this does</h2>
-    <p>And then some buttons here that are the same as those in the nav bar</p>
   </header>
   <main>
-
+    <h2>Create a Poll</h2>
+    <form method="POST" action="/create">
+      <p>Poll Question</p>
+      <input type="text" name="question" id="question" />
+      <p>Option 1</p>
+      <input type="text" name="option" /><i class="far fa-trash-alt"></i>
+      <p>Option 2</p>
+      <input type="text" name="option" /><i class="far fa-trash-alt"></i>
+      <p>Option 3</p>
+      <input type="text" name="option" /><i class="far fa-trash-alt"></i>
+      <br><span>Add More Options</span><i class="fas fa-plus-circle"></i><br>
+      <button type="submit">Create Poll</button>
+    </form>
   </main>
 </body>
 
