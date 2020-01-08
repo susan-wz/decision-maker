@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Susan's Decision-Maker</title>
 
-  <!-- App CSS -->
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <!-- Global layout CSS -->
   <link rel="stylesheet" href="../public/styles/layout.css" type="text/css" />
 
-  <!-- Nav CSS -->
-  <link rel="stylesheet" href="../public/styles/nav.css" type="text/css" />
-
   <!-- External Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -31,21 +31,40 @@
     <%- include('partials/_nav') %>
   </nav>
   <header>
-    <h1>Decision-Maker</h1>
+    <div>
+      <h1>Decision-Maker</h1>
+    </div>
+    <div>
+      <h3>Bit of explanation here about how this works.</h3>
+    </div>
   </header>
   <main>
     <h2>Create a Poll</h2>
     <form method="POST" action="/create">
+      <p>Your Email</p>
+      <input type="email" name="email" id="email" required />
       <p>Poll Question</p>
-      <input type="text" name="question" id="question" />
-      <p>Option 1</p>
-      <input type="text" name="option" /><i class="far fa-trash-alt"></i>
-      <p>Option 2</p>
-      <input type="text" name="option" /><i class="far fa-trash-alt"></i>
-      <p>Option 3</p>
-      <input type="text" name="option" /><i class="far fa-trash-alt"></i>
-      <br><span>Add More Options</span><i class="fas fa-plus-circle"></i><br>
-      <button type="submit">Create Poll</button>
+      <input type="text" name="question" id="question" required />
+      <div id="choices">
+        <p>Choice One</p>
+        <input type="text" name="option" required />
+        <p>Choice One Description (Optional)</p>
+        <input type="text" name="option" required />
+        <p>Choice Two</p>
+        <input type="text" name="option" required />
+        <p>Choice Two Description (Optional)</p>
+        <input type="text" name="option" required />
+        <p>Choice Three</p>
+        <input type="text" name="option" /><i class="far fa-trash-alt"></i>
+        <p>Choice Three Description (Optional)</p>
+        <input type="text" name="option" required />
+      </div>
+      <br>
+      <div>
+        <span>Add More Options</span>
+        <i class="fas fa-plus-circle" id="add-options"></i><br>
+      </div>
+      <button type="submit"><span>Create Poll</span></button>
     </form>
   </main>
 </body>

@@ -1,7 +1,58 @@
 /* Global Layout */
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: lightcoral;
-  font-family: 'Cabin', sans-serif;
+  background-color: #E7F0FF;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+  border: 2px solid black;
+  padding: 1em;
+}
+
+input {
+  width: 90%;
+  padding: 2px;
+  border-color: transparent;
+  border-bottom: 2px solid grey;
+  background-color: transparent;
+}
+
+input :focus {
+  border-color: transparent;
+  border-bottom: 4px solid grey;
+}
+
+button {
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+form > button {
+  width: 100%;
+  margin: 1em 0 1em 0
+}
+
+i {
+  margin-left: 4px;
 }

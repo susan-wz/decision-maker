@@ -19,13 +19,13 @@ app.post("/", (req, res) => {
 });
 
 // Choice submission page
-app.get("/submit", (req, res) => {
-  res.render("submit");
+app.get("/respond", (req, res) => {
+  res.render("respond");
 });
 
 // Post request to submit choices
-app.post("/submit", (req, res) => {
-  res.render("submit");
+app.post("/respond", (req, res) => {
+  res.render("respond");
 });
 
 // Admin result page
