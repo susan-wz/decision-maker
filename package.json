@@ -23,7 +23,7 @@
   "homepage": "https://github.com/susan-wz/decision-maker#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
